@@ -283,15 +283,79 @@
 
 //*РЕКУРСИЯ
 
-function factorial(n) {
-	if (n <= 0) {
-		return 1
-	}
-	if (!Number.isInteger(n) || typeof n !== 'number') {
-		return 'beb'
-	} else {
-		return n * factorial(n - 1)
-	}
-}
+// function factorial(n) {
+// 	if (n <= 0) {
+// 		return 1
+// 	}
+// 	if (!Number.isInteger(n) || typeof n !== 'number') {
+// 		return 'beb'
+// 	} else {
+// 		return n * factorial(n - 1)
+// 	}
+// }
 
-console.log(factorial('5.34'))
+// console.log(factorial('5.34'))
+
+//*задача с leetcode roman to int
+
+// let romanToInt = function (s) {
+// 	let sum = 0
+// 	const numbers = {
+// 		I: 1,
+// 		V: 5,
+// 		X: 10,
+// 		L: 50,
+// 		C: 100,
+// 		D: 500,
+// 		M: 1000,
+// 	}
+// 	const numbersSub = {
+// 		IV: 4,
+// 		IX: 9,
+// 		XL: 40,
+// 		XC: 90,
+// 		CD: 400,
+// 		CM: 900,
+// 	}
+
+// 	while (s != '') {
+// 		for (let key in numbersSub) {
+// 			if (s.includes(key)) {
+// 				s = s.replace(key, '')
+// 				sum += numbersSub[key]
+// 			}
+// 		}
+// 		for (let key in numbers) {
+// 			if (s.includes(key)) {
+// 				s = s.replace(key, '')
+// 				sum += numbers[key]
+// 			}
+// 		}
+// 	}
+// 	console.log(sum)
+// }
+
+// romanToInt('MIV')
+
+//*задача на количество страниц
+
+// function amountOfPages(summary) {
+// 	let string = ''
+// 	let i = 0
+
+// 	while (string.length < summary) {
+// 		++i
+// 		string += i
+// 	}
+// 	return i
+// }
+
+// console.log(amountOfPages(1095))
+
+//*задача на панграмму
+
+// function isPangram(string) {
+// 	return 'qwertyuiopasdfghjklzxcvbnm'.split('').every((x) => string.toLowerCase().includes(x))
+// }
+
+// console.log(isPangram('qwertyuiopasdfghjklzxcvbnm'))
