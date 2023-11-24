@@ -1,1 +1,3 @@
-qw
+type A={
+  b:string
+}
